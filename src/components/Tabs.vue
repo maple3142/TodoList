@@ -18,8 +18,15 @@ export default {
 	},
 	data() {
 		return {
-			curtab: this.tabs[0].key
+			curtab: null
 		}
+	},
+	mounted() {
+		if (this.curtab === null) this.curtab = this.tabs[0].key
+	},
+	storage: {
+		namespace: 'tabs',
+		keys: ['curtab']
 	}
 }
 </script>

@@ -30,7 +30,8 @@ export default new Vuex.Store({
 	},
 	plugins: [
 		vjss({
-			namespace: 'store'
+			namespace: 'store',
+			keys: ['todolist']
 		})
 	]
 })
