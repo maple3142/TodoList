@@ -1,3 +1,4 @@
 module.exports = opts => ({
-	entry: './src/index.js'
+	entry: './src/index.js',
+	homepage: '/TodoList'
 })

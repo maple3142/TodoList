@@ -13,6 +13,7 @@
 	"devDependencies": {
 		"css-loader": "^0.28.11",
 		"file-loader": "^1.1.11",
+		"gh-pages": "^1.1.0",
 		"node-sass": "^4.7.2",
 		"poi": "^9.6.13",
 		"sass-loader": "^6.0.7",
@@ -21,6 +22,7 @@
 	},
 	"scripts": {
 		"dev": "poi",
-		"build": "poi build"
+		"build": "poi build",
+		"deploy": "yarn build && gh-pages -d dist"
 	}
 }
