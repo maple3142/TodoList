@@ -1,0 +1,17 @@
+{
+	"app": {
+		"title": "Todo List"
+	},
+	"tabs": {
+		"all": "All",
+		"undone": "Undone",
+		"done": "Done"
+	},
+	"input": {
+		"placeholder": "New Todo",
+		"add": "Add"
+	},
+	"todolist": {
+		"notodo": "No todo found."
+	}
+}
