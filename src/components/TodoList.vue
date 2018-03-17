@@ -5,7 +5,7 @@
 	</ul>
 </template>
 <script>
-import {mapState} from 'vuex'
+import { mapState } from 'vuex'
 import TodoItem from '@/components/TodoItem'
 
 export default {

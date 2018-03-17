@@ -2,15 +2,15 @@ import Vue from 'vue'
 import vjss from 'vuejs-storage'
 import 'bootstrap/dist/css/bootstrap.css'
 
-import App from '@/App'
+import App from '@/components/App'
 import store from '@/store'
-import i18n from '@/i18n'
+import i18n from '@/locales'
 
 Vue.use(vjss)
 
 new Vue({
 	el: '#app',
-	render: h => <App />,
+	render: h => h(App),
 	store,
 	i18n
 })

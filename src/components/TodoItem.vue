@@ -1,6 +1,6 @@
 <template>
 	<li class="list-group-item list-group-item-action d-flex justify-content-between" :class="{ active: todo.done }" @click="toggle(todo)">
-		<span>{{todo.text}}</span>
+		<span v-text="todo.text"></span>
 		<span @click="remove(todo)">X</span>
 	</li>
 </template>

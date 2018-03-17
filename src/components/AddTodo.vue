@@ -2,7 +2,7 @@
 	<div class="input-group">
 		<input type="text" class="form-control" :placeholder="$t('input.placeholder')" v-model="text" @keyup.enter="add(text)">
 		<div class="input-group-append">
-			<button class="btn btn-outline-secondary" type="button" @click="add(text)" v-html="$t('input.add')"></button>
+			<button class="btn btn-outline-secondary" type="button" @click="add(text)" v-text="$t('input.add')"></button>
 		</div>
 	</div>
 </template>
@@ -15,6 +15,7 @@ export default {
 	},
 	methods: {
 		add(text) {
+			if (text.length === 0) return
 			this.$store.commit('add', { text })
 			this.text = ''
 		}

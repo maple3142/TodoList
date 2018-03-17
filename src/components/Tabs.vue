@@ -2,7 +2,7 @@
 	<div>
 		<ul class="nav nav-tabs">
 			<li class="nav-item" v-for="tab in tabs" :key="tab.key">
-				<a class="nav-link" :class="{ active: tab.key === curtab }" href="javascript:void(0)" @click="curtab=tab.key">{{tab.text}}</a>
+				<a class="nav-link" :class="{ active: tab.key === curtab }" href="javascript:void(0)" @click="curtab=tab.key" v-text="tab.text"></a>
 			</li>
 		</ul>
 		<slot :name="curtab"></slot>
