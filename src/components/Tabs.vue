@@ -18,11 +18,8 @@ export default {
 	},
 	data() {
 		return {
-			curtab: null
+			curtab: this.tabs[0].key
 		}
-	},
-	created() {
-		if (this.curtab === null) this.curtab = this.tabs[0].key
 	},
 	storage: {
 		namespace: 'tabs',
