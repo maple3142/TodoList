@@ -31,9 +31,9 @@ export default {
 	data() {
 		return {
 			tabs: [
-				{ key: 'all', text: this.$t('tabs.all') },
-				{ key: 'undone', text: this.$t('tabs.undone') },
-				{ key: 'done', text: this.$t('tabs.done') }
+				{ key: 'all', text: 'tabs.all' },
+				{ key: 'undone', text: 'tabs.undone' },
+				{ key: 'done', text: 'tabs.done' }
 			]
 		}
 	},

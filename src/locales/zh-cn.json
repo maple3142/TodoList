@@ -1,0 +1,17 @@
+{
+	"app": {
+		"title": "待办清单"
+	},
+	"tabs": {
+		"all": "全部",
+		"undone": "未完成",
+		"done": "已完成"
+	},
+	"input": {
+		"placeholder": "新待办事项",
+		"add": "新增"
+	},
+	"todolist": {
+		"notodo": "没有待办事项"
+	}
+}
