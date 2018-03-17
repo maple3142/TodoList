@@ -2,7 +2,7 @@
 	<div class="input-group">
 		<input type="text" class="form-control" :placeholder="$t('input.placeholder')" v-model="text" @keyup.enter="add(text)">
 		<div class="input-group-append">
-			<button class="btn btn-outline-secondary" type="button" @click="add(text)" v-text="$t('input.add')"></button>
+			<button class="btn btn-outline-secondary" type="button" @click="add(text)" v-t="'input.add'"></button>
 		</div>
 	</div>
 </template>

@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<h1 class="pt-2" v-text="$t('app.title')"></h1>
+				<h1 class="pt-2" v-t="'app.title'"></h1>
 			</div>
 		</div>
 		<div class="row">
@@ -42,8 +42,6 @@ export default {
 		Tabs,
 		AddTodo
 	},
-	computed: {
-		...mapGetters(['all', 'undone', 'done'])
-	}
+	computed: mapGetters(['all', 'undone', 'done'])
 }
 </script>
