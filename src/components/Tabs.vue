@@ -21,7 +21,7 @@ export default {
 			curtab: null
 		}
 	},
-	mounted() {
+	created() {
 		if (this.curtab === null) this.curtab = this.tabs[0].key
 	},
 	storage: {
