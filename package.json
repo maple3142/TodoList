@@ -5,6 +5,7 @@
 	"dependencies": {
 		"bootstrap": "^4.0.0",
 		"font-awesome": "^4.7.0",
+		"poi-preset-sw-precache": "^1.0.0",
 		"vue": "^2.5.16",
 		"vue-i18n": "^7.6.0",
 		"vuejs-storage": "^2.1.1",

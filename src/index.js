@@ -6,6 +6,8 @@ import App from '@/components/App'
 import store from '@/store'
 import i18n, { loadLanguage } from '@/locales'
 
+loadLanguage(navigator.language).then(lang => console.log('language loaded: %s', lang))
+
 Vue.use(vjss)
 
 new Vue({
@@ -15,4 +17,22 @@ new Vue({
 	i18n
 })
 
-loadLanguage(navigator.language).then(lang => console.log('language loaded: %s', lang))
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker
+		.register('/service-worker.js')
+		.then(reg => {
+			reg.onupdatefound = () => {
+				const installing = reg.installing
+				installing.onstatechange = () => {
+					if (installing.state === 'installed') {
+						if (navigator.serviceWorker.controller) {
+							console.log('New content is available; please refresh.')
+						} else {
+							console.log('Content is cached for offline use.')
+						}
+					}
+				}
+			}
+		})
+		.catch(err => console.error('Service Worker register error:', err))
+}
