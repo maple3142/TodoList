@@ -4,6 +4,6 @@ module.exports = opts => ({
 		title: 'Todo List'
 	},
 	presets: [
-		require('poi-preset-sw-precache')()
+		require('./poi-preset-sw-precache')()
 	]
 })
